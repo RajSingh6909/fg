@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/textviewbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/textviewbackground"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/linedelievryTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delievery Time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linDelieveryOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/textviewbackground"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etDelieveryTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:padding="10dp"
+            android:background="@drawable/textviewbackground"
+            android:inputType="text"
+            android:hint="2"
+            android:textSize="15sp" />
+
+
+        <Spinner
+            android:id="@+id/spHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:minHeight="40dp" />
+
+    </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etPartnerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Cold Chain Partner Name"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:background="@drawable/textviewbackground"
+            android:textStyle="bold" />
+
+
+
+</LinearLayout>
