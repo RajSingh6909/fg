@@ -116,7 +116,8 @@ public class SectorActivity extends AppCompatActivity {
             for (int i = 0; i < arlCategoryselected.size(); i++) {
                 inflateViewCropCell(arlCategoryselected.get(i), arlCategoryselected);
             }
-        } else {
+        }
+        else {
             objSector = (Sector) bundle.getSerializable("SECTOR");
             arlSector.addAll((ArrayList<Sector>) bundle.getSerializable("SELECTEDSECTORS"));
             SectorName = objSector.getName();
@@ -141,6 +142,7 @@ public class SectorActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<Category> category) {
                 arlCategory.addAll(category);
+
             }
         });
 

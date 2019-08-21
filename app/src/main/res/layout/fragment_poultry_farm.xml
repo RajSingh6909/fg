@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp"
     android:layout_marginBottom="5dp"
     android:background="@color/colorWhite"
     android:orientation="vertical">
@@ -32,27 +31,34 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtSelectedCategoryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:minHeight="25dp"
+                    android:gravity="center_vertical"
+                    android:hint=" Category Name"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txtSelectedCategoryName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:minHeight="25dp"
-                android:text="Selected Category Name"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+            </LinearLayout>
+
+
 
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_weight="0.5"
+                android:layout_weight="1"
                 android:background="@drawable/textviewbackground">
 
                 <Spinner
@@ -129,7 +135,7 @@
     <Button
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="10dp"

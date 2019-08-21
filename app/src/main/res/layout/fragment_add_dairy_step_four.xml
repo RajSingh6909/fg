@@ -201,10 +201,14 @@
                 <Button
                     android:id="@+id/btnSubmit"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="40dp"
                     android:background="@drawable/rectangle_button"
-                    android:hint="Submit"
-                    android:paddingLeft="5dp"
+                    android:text="Submit"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
                     android:textColor="@color/colorWhite" />
 
             </LinearLayout>

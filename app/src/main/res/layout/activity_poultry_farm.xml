@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/llParentPoultryFarm"
         android:orientation="vertical"
         tools:context=".Activity.FarmerActivity">
 
@@ -271,6 +272,7 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/textviewbackground"
                         android:hint="26861244"
+                        android:maxLength="8"
                         android:inputType="number"
                         android:paddingLeft="5dp" />
 
@@ -316,6 +318,7 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/textviewbackground"
                         android:hint="9909639039"
+                        android:maxLength="10"
                         android:inputType="number"
                         android:paddingLeft="5dp" />
 
@@ -355,30 +358,28 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/textviewbackground"
                         android:hint="9909639039"
+                        android:maxLength="10"
                         android:inputType="number"
                         android:paddingLeft="5dp" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="horizontal">
+
 
                     <Button
                         android:id="@+id/btnNext"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="40dp"
                         android:background="@drawable/rectangle_button"
-                        android:hint="Next"
-                        android:paddingLeft="5dp"
+                        android:text="Next"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="15dp"
                         android:textColor="@color/colorWhite" />
 
-                </LinearLayout>
+
 
             </LinearLayout>
 

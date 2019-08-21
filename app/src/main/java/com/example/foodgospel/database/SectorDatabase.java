@@ -26,7 +26,7 @@ import com.example.foodgospel.Models.SectorDBModel;
 import com.example.foodgospel.Models.State;
 
 
-@Database(entities = {SectorDBModel.class, State.class, District.class, City.class, Category.class, Crop.class, Sector.class, MilkProduct.class, AddFarmerAllData.class, LiveStockGrown.class, AddDairyAllData.class, AddPoultryFarmAllData.class}, version = 12, exportSchema = false)
+@Database(entities = {SectorDBModel.class, State.class, District.class, City.class, Category.class, Crop.class, Sector.class, MilkProduct.class, AddFarmerAllData.class, LiveStockGrown.class, AddDairyAllData.class, AddPoultryFarmAllData.class}, version = 14, exportSchema = false)
 @TypeConverters({Converters.class})
 public abstract class SectorDatabase extends RoomDatabase {
 

@@ -28,7 +28,6 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.foodgospel.Activity.NavHomeActivity;
 import com.example.foodgospel.Activity.SectorActivity;
 import com.example.foodgospel.Adapters.DeliveryArrayAdapter;
@@ -48,14 +47,11 @@ import com.example.foodgospel.R;
 import com.example.foodgospel.Repository.SectorRepository;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
 import static android.app.Activity.RESULT_OK;
 
 public class AddFarmerStepFourFragment extends Fragment {
@@ -600,8 +596,6 @@ public class AddFarmerStepFourFragment extends Fragment {
 
                 }
             });
-
-
         }
 
 

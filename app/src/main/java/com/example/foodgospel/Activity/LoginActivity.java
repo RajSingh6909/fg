@@ -105,13 +105,17 @@ public class LoginActivity extends AppCompatActivity {
                         strUserID = object.getString("id");
                         strName = object.getString("name");
                         Toast.makeText(getApplicationContext(), Message, Toast.LENGTH_LONG).show();
-                        FoodGospelSharedPrefernce.setSharePrefernceData(LoginActivity.this,"USERID",strUserID);
-                        FoodGospelSharedPrefernce.setSharePrefernceData(LoginActivity.this,"NAME",strName);
+                        FoodGospelSharedPrefernce.setSharePrefernceData(LoginActivity.this, "USERID", strUserID);
+                        FoodGospelSharedPrefernce.setSharePrefernceData(LoginActivity.this, "NAME", strName);
                        /* editor = sharedPreferences.edit();
                         editor.putString("UserId", strUserID);
                         editor.putString("Name", strName);
                         editor.clear();
                         editor.apply();*/
+
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("value", StrUserName);
+                        editor.apply();
 
                         Intent i = new Intent(LoginActivity.this, NavHomeActivity.class);
                         startActivity(i);

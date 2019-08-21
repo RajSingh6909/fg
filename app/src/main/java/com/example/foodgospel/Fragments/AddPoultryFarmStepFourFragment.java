@@ -87,6 +87,7 @@ public class AddPoultryFarmStepFourFragment extends Fragment {
     ViewPoultryListAdapter rcvAdapter;
     ProduceListArrayAdapter objProductListArrayAdapter;
     DeliveryArrayAdapter objDeliveryArrayAdapter;
+    private LinearLayout linDelieveryOptionsLayout,linParent,liSpinner,liTime,liColdChain;
 
     public AddPoultryFarmStepFourFragment() {
         // Required empty public constructor
@@ -126,6 +127,7 @@ public class AddPoultryFarmStepFourFragment extends Fragment {
             @Override
             public void onChanged(@Nullable List<Category> category) {
                 arlCategory.addAll(category);
+                arlCategory.remove(1);
             }
         });
 
@@ -301,21 +303,38 @@ public class AddPoultryFarmStepFourFragment extends Fragment {
         etPartnerName = objView.findViewById(R.id.etPartnerName);
         spOptions = objView.findViewById(R.id.spOptions);
         spHours = objView.findViewById(R.id.spHours);
+        linDelieveryOptionsLayout=objView.findViewById(R.id.linDelieveryOptionsLayout);
+        linParent=objView.findViewById(R.id.linParent);
+        liColdChain=objView.findViewById(R.id.liColdChain);
+        liSpinner=objView.findViewById(R.id.liSpinner);
+        liTime=objView.findViewById(R.id.liTime);
 
 
         if (objDeliveryoption.getDelieveryName() == "Food Gospel Pickup") {
-            spHours.setVisibility(View.GONE);
-            etPartnerName.setVisibility(View.GONE);
-            etDelieveryTime.setVisibility(View.GONE);
+           // spHours.setVisibility(View.GONE);
+            liTime.setVisibility(View.GONE);
+            linParent.setVisibility(View.GONE);
+            liSpinner.setVisibility(View.VISIBLE);
+            liColdChain.setVisibility(View.GONE);
+            //etPartnerName.setVisibility(View.GONE);
+           // etDelieveryTime.setVisibility(View.GONE);
             strDeliveryOption = objDeliveryoption.getDelieveryNameCode();
         } else if (objDeliveryoption.getDelieveryName() == "Cold Chain Pickup") {
-            spHours.setVisibility(View.GONE);
-            etPartnerName.setVisibility(View.GONE);
-            etDelieveryTime.setVisibility(View.GONE);
-            spOptions.setVisibility(View.GONE);
+           // spHours.setVisibility(View.GONE);
+            linParent.setVisibility(View.GONE);
+            liSpinner.setVisibility(View.GONE);
+            liTime.setVisibility(View.GONE);
+            liColdChain.setVisibility(View.VISIBLE);
+           // etPartnerName.setVisibility(View.GONE);
+           // etDelieveryTime.setVisibility(View.GONE);
+           // spOptions.setVisibility(View.GONE);
             strDeliveryOption = objDeliveryoption.getDelieveryNameCode();
         } else if (objDeliveryoption.getDelieveryName() == "Sends Delivery") {
-            etPartnerName.setVisibility(View.GONE);
+            //etPartnerName.setVisibility(View.GONE);
+            linParent.setVisibility(View.VISIBLE);
+            liSpinner.setVisibility(View.GONE);
+            liTime.setVisibility(View.GONE);
+            liColdChain.setVisibility(View.GONE);
             strDeliveryOption = objDeliveryoption.getDelieveryNameCode();
         }
 
@@ -495,6 +514,4 @@ public class AddPoultryFarmStepFourFragment extends Fragment {
             }
         }
     }
-
-
 }

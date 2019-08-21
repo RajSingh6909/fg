@@ -146,6 +146,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 } else {
                     //app open directly
                     Intent i = new Intent(SplashScreenActivity.this, NavHomeActivity.class);
+
                     startActivity(i);
                 }
 

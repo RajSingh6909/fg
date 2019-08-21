@@ -132,7 +132,8 @@ public class AddDairyStepTwoFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {
 
-                } else {
+                }
+                else {
                     SelectedQualificationName = parent.getSelectedItem().toString();
                     Toast.makeText(getActivity(), "Selected Qualification" + SelectedQualificationName, Toast.LENGTH_LONG).show();
                 }

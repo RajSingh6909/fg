@@ -192,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:minHeight="50dp">
 
@@ -202,7 +202,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/textviewbackground"
                         android:hint="Age"
-                        android:inputType="text"
+                        android:maxLength="3"
+                        android:inputType="number"
                         android:paddingLeft="5dp" />
 
                 </LinearLayout>
@@ -295,7 +296,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/textviewbackground"
                     android:minHeight="50dp">
@@ -308,25 +309,21 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="horizontal">
+
 
                     <Button
                         android:id="@+id/btnNext"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="40dp"
                         android:background="@drawable/rectangle_button"
-                        android:hint="Next"
-                        android:paddingLeft="5dp"
+                        android:text="Next"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="15dp"
                         android:textColor="@color/colorWhite" />
 
-                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>

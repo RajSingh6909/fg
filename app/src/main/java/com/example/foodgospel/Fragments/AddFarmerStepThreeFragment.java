@@ -187,6 +187,7 @@ public class AddFarmerStepThreeFragment extends Fragment implements OnMapReadyCa
             objFarmer = (UserFarmer) getArguments().getSerializable("FarmerEditStepTwo");
 
             if (objFarmer.getState() == null) {
+
                 spState.setSelection(0);
             } else {
                 spState.setAdapter(adpState);
@@ -241,6 +242,7 @@ public class AddFarmerStepThreeFragment extends Fragment implements OnMapReadyCa
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 int selectedId = arlStateId.get(position);
+
                 selectedStateId = arlStateId.get(position);
                 arlDistrictList.clear();
                 arlCityList.clear();

@@ -62,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="5dp">
 
                     <EditText
@@ -172,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:minHeight="50dp"
                     android:orientation="horizontal">
@@ -182,56 +182,62 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:layout_weight="2.5"
+                        android:layout_weight="1"
                         android:background="@drawable/textviewbackground"
                         android:hint=""
                         android:inputType="number"
                         android:paddingLeft="5dp" />
-
-                    <Spinner
-                        android:id="@+id/spOptions"
+                    <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
                         android:background="@drawable/textviewbackground"
-                        android:paddingLeft="5dp"
-                        android:spinnerMode="dropdown" />
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <Spinner
+                            android:id="@+id/spOptions"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="5dp"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+
 
                 </LinearLayout>
 
 
                 <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sector"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-
-                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@color/colorRed"
-                    android:textSize="15dp" />
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sector"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorRed"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/textviewbackground"
                     android:minHeight="50dp">
@@ -297,7 +303,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/textviewbackground"
                     android:minHeight="50dp">
@@ -350,7 +356,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:minHeight="50dp"
                     android:background="@drawable/textviewbackground"
@@ -370,10 +376,11 @@
                 <Button
                     android:id="@+id/btnSubmit"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="40dp"
                     android:background="@drawable/rectangle_button"
-                    android:hint="Submit"
-                    android:paddingLeft="5dp"
+                    android:text="Submit"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="15dp"
                     android:textColor="@color/colorWhite" />
 
             </LinearLayout>

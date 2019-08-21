@@ -60,7 +60,7 @@ public class FarmerActivity extends AppCompatActivity {
             objFarmer = (UserFarmer) getIntent().getSerializableExtra("FarmerEditData");
             etFarmerName.setText(objFarmer.getName()); //Farmer name
 
-            etFarmName.setText(objFarmer.getFarmName()); //Farm Name
+            etFarmName.setText(objFarmer.getFarmName()); //Farm NameFarmerEditData
             if (objFarmer.getContactMode().equalsIgnoreCase("SMS")) {
                 rbSMS.setChecked(true);
             } else if (objFarmer.getContactMode().equalsIgnoreCase("CALL")) {

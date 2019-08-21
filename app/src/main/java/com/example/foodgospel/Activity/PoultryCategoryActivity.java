@@ -95,7 +95,7 @@ public class PoultryCategoryActivity extends AppCompatActivity {
 
         }
 
-        txtSelectedCategoryName.setText(CategoryName);
+        txtSelectedCategoryName.setText("Livestock Grown");
         toolbar.setTitle(CategoryName);
 
         arlCropList = getCropList(19);

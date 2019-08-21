@@ -279,7 +279,9 @@ public class AddDairyStepFourFragment extends Fragment {
 
                 if (etPartnerName.getVisibility() == View.VISIBLE) {
                     strColdChainPatnerName = etPartnerName.getText().toString();
-                } else {
+                }
+
+                else {
                     strColdChainPatnerName = "";
                 }
 
@@ -522,5 +524,4 @@ public class AddDairyStepFourFragment extends Fragment {
             }
         });
     }
-
 }

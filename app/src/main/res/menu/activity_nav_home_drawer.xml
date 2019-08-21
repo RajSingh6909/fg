@@ -19,29 +19,47 @@
         <item
             android:id="@+id/nav_poultry"
             android:icon="@drawable/ic_menu_manage"
-            android:title="@string/nav_poultry" />
+            android:title="@string/nav_poultry"/>
+        <!--<item-->
+            <!--android:id="@+id/nav_about"-->
+            <!--android:icon="@drawable/ic_info_black_24dp"-->
+            <!--android:title="@string/nav_about" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_logout"-->
+            <!--android:icon="@drawable/logout_menu"-->
+            <!--android:title="@string/nav_logout" />-->
+    </group>
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/nav_about" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_about"
-                android:icon="@drawable/ic_info_black_24dp"
-                android:title="@string/nav_about" />
-        </menu>
-    </item>
-    <item android:title="ACTION">
-        <menu>
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/logout_menu"
-                android:title="@string/nav_logout" />
-        </menu>
-    </item>
+    <group android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_menu"
+            android:title="@string/nav_logout" />
+    </group>
 
-
+    <!--<item android:title="">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_about"-->
+                <!--android:icon="@drawable/ic_info_black_24dp"-->
+                <!--android:title="@string/nav_about" />-->
+        <!--</menu>-->
+    <!--</item>-->
+    <!--<item android:title="">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_logout"-->
+                <!--android:icon="@drawable/logout_menu"-->
+                <!--android:title="@string/nav_logout" />-->
+        <!--</menu>-->
+    <!--</item>-->
 </menu>
