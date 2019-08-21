@@ -275,7 +275,7 @@ public class AddDairyStepTwoFragment extends Fragment {
         if (isEditStepOne) {
             objFarmer = (UserFarmer) getArguments().getSerializable("DairyEditStepOne");
             etEmail.setText(objFarmer.getEmail());
-            etMarketEmail.setText(objFarmer.getMarketEmail());
+            etMarketEmail.setText(objFarmer.getMarketEmail().trim());
 
             if (objFarmer.getLanguage() == null) {
                 spLanguage.setSelection(0);
@@ -322,7 +322,7 @@ public class AddDairyStepTwoFragment extends Fragment {
                     objAddDairyAllData.setDistrict(selectedDistrictId);
                     objAddDairyAllData.setCity(selectedCityId);
                     objAddDairyAllData.setEmail(etEmail.getText().toString());
-                    objAddDairyAllData.setMailing_address(etMarketEmail.getText().toString());
+                    objAddDairyAllData.setMarket_email(etMarketEmail.getText().toString());
 
                     //Fragment calling step - 3
                     FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
@@ -351,6 +351,7 @@ public class AddDairyStepTwoFragment extends Fragment {
             etEmail.startAnimation(shake);
             flag = false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
+
             etEmail.setError("Enter Valid Email Address.");
             etEmail.startAnimation(shake);
         }

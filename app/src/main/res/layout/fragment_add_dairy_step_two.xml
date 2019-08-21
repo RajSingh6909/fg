@@ -69,7 +69,7 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/textviewbackground"
                         android:hint="richa.shah@togglebytes.com"
-                        android:inputType="text"
+                        android:inputType="textEmailAddress"
                         android:paddingLeft="5dp" />
 
                 </LinearLayout>
@@ -114,7 +114,7 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/textviewbackground"
                         android:hint="Work /Secondary  Email"
-                        android:inputType="text"
+                        android:inputType="textEmailAddress"
                         android:paddingLeft="5dp" />
 
                 </LinearLayout>
